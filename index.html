@@ -3,121 +3,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Portfolio Jenske Sampson | 3D & Design</title>
+    <title>Jenske Sampson | 3D & Design Portfolio</title>
     
-    <link rel="stylesheet" href="wp-includes/blocks/navigation/style.min.css">
+    <link rel="stylesheet" href="wp-includes/css/dist/block-library/style.min.css">
     <link rel="stylesheet" href="wp-content/plugins/twentig/dist/blocks/common.css">
     <link rel="stylesheet" href="wp-content/plugins/3d-viewer/build/blocks/3d-viewer/view.css">
+    <link rel="stylesheet" href="wp-content/plugins/twentig/dist/twentig.min.css">
 
     <style>
-        :root {
-            --bg: #0a0a0a;
-            --accent: #00ffcc;
-            --text: #ffffff;
-        }
-
-        body { background: var(--bg); color: var(--text); font-family: 'Inter', sans-serif; margin: 0; overflow-x: hidden; }
-
-        /* --- ROLLING TITLES (Marquee Effect) --- */
-        .rolling-ticker {
-            background: var(--accent);
-            color: #000;
-            padding: 10px 0;
+        /* Extra fix voor je 'Rolling Titles' (Marquee) mocht de plugin vertragen */
+        .tw-marquee {
             overflow: hidden;
             white-space: nowrap;
-            font-weight: bold;
+            background: #00ffcc; /* Jouw accentkleur */
+            color: #000;
+            padding: 10px 0;
+            font-weight: 800;
             text-transform: uppercase;
-            font-size: 0.9rem;
+        }
+        
+        body { background-color: #000; color: #fff; font-family: sans-serif; margin: 0; }
+        
+        /* Zorgt dat de 3D viewer de juiste hoogte heeft */
+        .wp-block-3d-viewer-model-viewer {
+            width: 100%;
+            height: 600px;
+            background: #111;
         }
 
-        .rolling-content {
-            display: inline-block;
-            animation: marquee 20s linear infinite;
-        }
-
-        @keyframes marquee {
-            0% { transform: translateX(0); }
-            100% { transform: translateX(-50%); }
-        }
-
-        /* --- HERO & CAROUSEL --- */
-        .hero-section {
-            padding: 80px 5%;
-            text-align: center;
-        }
-
-        .hero-title {
-            font-size: 4rem;
-            margin-bottom: 10px;
-            letter-spacing: -2px;
-        }
-
-        /* Container voor de Twentig/WP Carousel */
-        .portfolio-carousel {
-            margin: 40px auto;
-            max-width: 1200px;
-            min-height: 400px;
-            background: #111; /* Tijdelijke placeholder kleur */
-            border-radius: 15px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border: 1px dashed #333;
-        }
-
-        /* --- NAVIGATIE --- */
-        header {
+        .header-main {
             display: flex;
             justify-content: space-between;
-            padding: 20px 5%;
-            align-items: center;
+            padding: 30px 5%;
+            border-bottom: 1px solid #222;
         }
-
-        nav ul { display: flex; gap: 20px; list-style: none; }
-        nav a { color: var(--text); text-decoration: none; opacity: 0.7; }
-        nav a:hover { opacity: 1; color: var(--accent); }
-
-        .wp-block-3d-viewer { width: 100%; height: 500px; }
     </style>
 </head>
-<body>
 
-    <div class="rolling-ticker">
-        <div class="rolling-content">
-            HOME • OVER MIJ • 3D PROJECTS • CONCEPT ART • INTERACTIVE DESIGN • CONTACT • HOME • OVER MIJ • 3D PROJECTS • CONCEPT ART • INTERACTIVE DESIGN • CONTACT •
+<body class="home page-template-default wp-embed-responsive">
+
+    <div class="wp-block-twentig-marquee tw-marquee">
+        <div class="tw-marquee__inner">
+            <span>HOME • OVER MIJ • 3D PROJECTS • CONCEPT ART • INTERACTIVE DESIGN •&nbsp;</span>
+            <span>HOME • OVER MIJ • 3D PROJECTS • CONCEPT ART • INTERACTIVE DESIGN •&nbsp;</span>
         </div>
     </div>
 
-    <header>
-        <div class="logo"><strong>JENSKE</strong></div>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="over-mij/">Over mij</a></li>
+    <header class="header-main">
+        <div class="site-logo"><strong>JENSKE SAMPSON</strong></div>
+        <nav class="wp-block-navigation">
+            <ul class="wp-block-navigation__container">
+                <li class="wp-block-navigation-item"><a href="index.html">Home</a></li>
+                <li class="wp-block-navigation-item"><a href="over-mij/index.html">Over mij</a></li>
             </ul>
         </nav>
     </header>
 
-    <main>
-        <section class="hero-section">
-            <h1 class="hero-title">Creatief Portfolio</h1>
-            <p>Welkom. Hieronder vind je mijn nieuwste werk in 3D en design.</p>
-
-            <div class="portfolio-carousel">
-                <p style="color: #444;">[ Hier laadt de Twentig Carousel Block ]</p>
+    <main class="wp-site-blocks">
+        
+        <section class="wp-block-group alignfull has-background" style="padding: 100px 5%; background-color: #000;">
+            <div class="wp-block-group__inner-container">
+                <h1 class="has-text-align-center" style="font-size: 5rem; line-height: 1;">Creatieve Maker</h1>
+                <p class="has-text-align-center" style="color: #888; font-size: 1.2rem;">3D, Design & Visual Storytelling</p>
+                
+                <div class="wp-block-twentig-carousel swiper-container" style="margin-top: 50px;">
+                    <div class="swiper-wrapper">
+                        <p style="text-align:center; color:#444;">[ Carousel laadt via wp-content/plugins/twentig ]</p>
+                    </div>
+                </div>
             </div>
         </section>
 
-        <section style="padding: 50px 5%;">
-            <div class="wp-block-3d-viewer">
-                 <p style="text-align: center; color: var(--accent);">[ 3D Model Viewer actief ]</p>
+        <section class="wp-block-group" style="padding: 50px 5%;">
+            <div class="wp-block-3d-viewer-model-viewer">
+                <div id="model-viewer-1" class="model-viewer-container"></div>
             </div>
         </section>
+
     </main>
 
-    <footer style="text-align: center; padding: 40px; color: #333;">
-        &copy; 2026 Jenske Sampson
+    <footer class="wp-block-template-part" style="text-align: center; padding: 50px; border-top: 1px solid #222;">
+        <p>&copy; 2026 Jenske Sampson</p>
     </footer>
+
+    <script src="wp-includes/js/jquery/jquery.min.js"></script>
+    <script src="wp-content/plugins/twentig/dist/twentig.min.js"></script>
+    <script src="wp-content/plugins/3d-viewer/build/blocks/3d-viewer/view.js"></script>
 
 </body>
 </html>
