@@ -3,62 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="robots" content="max-image-preview:large">
-    <style>img:is([sizes="auto" i], [sizes^="auto," i]) { contain-intrinsic-size: 3000px 1500px }</style>
     <title>Portfolio Jenske Sampson</title>
-
-    <link rel="stylesheet" id="wp-block-navigation-css" href="/PortfolioWordpress/wp-includes/blocks/navigation/style.min.css?ver=6.8.3" media="all">
-    <link rel="stylesheet" id="b3dviewer-modelviewer-style-css" href="/PortfolioWordpress/wp-content/plugins/3d-viewer/build/blocks/3d-viewer/view.css?ver=6.8.3" media="all">
-    <link rel="stylesheet" id="wp-block-image-css" href="/PortfolioWordpress/wp-includes/blocks/image/style.min.css?ver=6.8.3" media="all">
-    <link rel="stylesheet" id="bp3d-custom-style-css" href="/PortfolioWordpress/wp-content/plugins/3d-viewer/public/css/custom-style.css?ver=1762024365" media="all">
-    <link rel="stylesheet" id="twentig-blocks-css" href="/PortfolioWordpress/wp-content/plugins/twentig/dist/blocks/common.css?ver=2f2aa03d36da08e54bf6" media="all">
-
-    <script>
-        window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/16.0.1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/16.0.1\/svg\/","svgExt":".svg","source":{"concatemoji":"\/PortfolioWordpress\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.8.3"}};
-    </script>
+    
+    <link rel="stylesheet" href="wp-includes/blocks/navigation/style.min.css">
+    <link rel="stylesheet" href="wp-content/plugins/3d-viewer/build/blocks/3d-viewer/view.css">
+    <link rel="stylesheet" href="wp-includes/blocks/image/style.min.css">
+    <link rel="stylesheet" href="wp-content/plugins/3d-viewer/public/css/custom-style.css">
+    <link rel="stylesheet" href="wp-content/plugins/twentig/dist/blocks/common.css">
 
     <style>
-        body { --wp--preset--color--primary: #FFCCFF; font-family: sans-serif; }
-        .wp-block-navigation .wp-block-navigation-item__label{overflow-wrap:break-word}
-        header { padding: 20px; border-bottom: 1px solid #eee; }
+        body { background-color: white; color: black; font-family: sans-serif; margin: 0; padding: 20px; }
+        .wp-site-blocks { max-width: 1000px; margin: 0 auto; }
+        header { border-bottom: 1px solid #ccc; margin-bottom: 20px; padding-bottom: 10px; }
+        nav ul { list-style: none; padding: 0; display: flex; gap: 15px; }
+        h1 { font-size: 1.5rem; }
     </style>
 </head>
-
-<body class="home page-template-default page wp-embed-responsive has-global-padding">
-
-<div class="wp-site-blocks">
-    <header class="wp-block-template-part">
-        <div class="wp-block-group is-layout-flex">
-            <h1 class="wp-block-site-title"><a href="/PortfolioWordpress/">Portfolio Jenske Sampson</a></h1>
-            <nav class="wp-block-navigation is-layout-flex">
-                <ul class="wp-block-navigation__container">
-                    <li class="wp-block-navigation-item"><a class="wp-block-navigation-item__content" href="/PortfolioWordpress/">Home</a></li>
-                    <li class="wp-block-navigation-item"><a class="wp-block-navigation-item__content" href="/PortfolioWordpress/over-mij/">Over mij</a></li>
+<body>
+    <div class="wp-site-blocks">
+        <header>
+            <h1>Portfolio Jenske Sampson</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="over-mij/">Over mij</a></li>
                 </ul>
             </nav>
-        </div>
-    </header>
+        </header>
 
-    <main class="wp-block-group is-layout-flow">
-        <div class="wp-block-columns is-layout-flex">
-            <div class="wp-block-column" style="flex-basis:100%">
-                <h2 class="wp-block-heading has-text-align-center">Welkom op mijn Portfolio</h2>
-                <p class="has-text-align-center">Ik ben Jenske Sampson, een creatieve maker gefocust op 3D en design.</p>
-            </div>
-        </div>
+        <main>
+            <section style="text-align: center; padding: 50px 0;">
+                <h2>Welkom op mijn Portfolio</h2>
+                <p>Ik ben Jenske Sampson, een creatieve maker gefocust op 3D en design.</p>
+            </section>
 
-        <div class="wp-block-b3dviewer-3d-viewer">
-            <div class="b3d-model-viewer-wrapper">
-                <p style="text-align:center; color:#888;">[3D Model Viewer]</p>
-            </div>
-        </div>
-    </main>
+            <section style="background: #f9f9f9; padding: 40px; text-align: center; border-radius: 8px;">
+                <p style="color: #666;">[3D Model Viewer laadt hier via wp-content bestanden]</p>
+            </section>
+        </main>
 
-    <footer class="wp-block-template-part" style="margin-top:50px; padding:20px; border-top:1px solid #eee;">
-        <p class="has-text-align-center">© 2024 Jenske Sampson - Gemaakt met WordPress & GitHub</p>
-    </footer>
-</div>
-
-<script src="/PortfolioWordpress/wp-includes/js/wp-emoji-release.min.js?ver=6.8.3" defer></script>
+        <footer style="margin-top: 40px; text-align: center; font-size: 0.8rem; color: #888;">
+            <p>© 2026 Jenske Sampson</p>
+        </footer>
+    </div>
 </body>
 </html>
