@@ -1,0 +1,8 @@
+<!-- start Simple Custom CSS and JS -->
+<style type="text/css">
+/* Fix for the vertical text from the dynamic text block */
+.gsbp-4cd2afd {
+    writing-mode: horizontal-tb !important;
+    white-space: nowrap !important; /* Prevents text from wrapping vertically */
+}</style>
+<!-- end Simple Custom CSS and JS -->

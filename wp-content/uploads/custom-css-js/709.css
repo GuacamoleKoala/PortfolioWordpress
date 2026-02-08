@@ -1,0 +1,15 @@
+<!-- start Simple Custom CSS and JS -->
+<style type="text/css">
+.wp-block-embed-spotify {
+    padding-bottom: 15% !important;
+    height: 0 !important;
+}
+
+.wp-block-embed-spotify iframe {
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+}</style>
+<!-- end Simple Custom CSS and JS -->

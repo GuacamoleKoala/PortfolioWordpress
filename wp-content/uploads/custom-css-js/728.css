@@ -1,0 +1,17 @@
+<!-- start Simple Custom CSS and JS -->
+<style type="text/css">
+/* Target the main gallery container */
+.wp-block-ftg-gallery {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+
+/* Also, check for parent elements that might be restricting the width */
+/* This is a general example; you may need to adjust based on your theme */
+.entry-content, .site-main, .container {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}</style>
+<!-- end Simple Custom CSS and JS -->
